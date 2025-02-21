@@ -17,23 +17,24 @@
 - Figma:   [📎 Figma]([https://www.figma.com/file/g0fMpeE9IiQ8Ww1Vd37qBd/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4(UI)?type=design&node-id=0-1&mode=design&t=PjBLYVJr7YN8MlHJ-0](https://www.figma.com/design/qZze2sAfNDqL95ranIaSfr/Untitled?node-id=0-1&p=f&t=3S859S05HT1Oix5L-0))
 
 
-# 🧩 기술 스택 🧩
+# 🧩 Skill 스택 🧩
 
-## 🛠️Front-end🛠️
+
 
 
 <div align="left" >
 	<img src="https://img.shields.io/badge/React-444444?style=for-the-badge&logo=react" />
-	<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
-	<img src="https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=tailwindcss&logoColor=white" />
 	<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white" />
+	<img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+	<img src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white" />
+	
   <img src="https://img.shields.io/badge/recoil-3578E5?style=for-the-badge&logo=recoil&logoColor=white" />
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
 
-[![프로젝트 스택](https://skillicons.dev/icons?i=react,tailwindcss,ts,styledcomponents,recoil)](https://skillicons.dev)
 </div>
 
-## 🛠️ETC🛠️
+
 
 <div align="left">
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
+  
 </div>
