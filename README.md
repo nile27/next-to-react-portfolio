@@ -5,7 +5,7 @@
 
 # 임민규 개인 포트폴리오 사이트
 
-노션이나 이력서 플랫폼을 사용하여 형식적인 포트폴리오보다 실제로 웹으로 만들어보기 위해 제작한 사이트입니다.
+
 
 </div>
 </br>
@@ -22,13 +22,14 @@
 ## 🛠️Front-end🛠️
 
 
-<div align="left">
+<div align="left" >
 	<img src="https://img.shields.io/badge/React-444444?style=for-the-badge&logo=react" />
 	<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
 	<img src="https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=tailwindcss&logoColor=white" />
 	<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white" />
   <img src="https://img.shields.io/badge/recoil-3578E5?style=for-the-badge&logo=recoil&logoColor=white" />
-  
+
+[![프로젝트 스택](https://skillicons.dev/icons?i=react,tailwindcss,ts,styledcomponents,recoil)](https://skillicons.dev)
 </div>
 
 ## 🛠️ETC🛠️
