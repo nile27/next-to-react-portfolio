@@ -1,4 +1,3 @@
-"use client";
 import { useEffect } from "react";
 import { projectData } from "../lib/dummyData";
 import { useRecoilValue, useRecoilState } from "recoil";

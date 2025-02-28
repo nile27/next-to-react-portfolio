@@ -1,5 +1,3 @@
-"use client";
-
 import { useRecoilState } from "recoil";
 import { isDarkAtom } from "../state/isDarkAtom";
 

@@ -1,4 +1,3 @@
-"use client";
 import SkillTag from "./SkillTag";
 import { useRecoilValue } from "recoil";
 import { isDarkAtom } from "../../state/isDarkAtom";

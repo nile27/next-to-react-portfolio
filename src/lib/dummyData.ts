@@ -15,6 +15,7 @@ type TProjectData = {
     siteLink?: string;
   };
   modalTag: string[];
+  notice?: string;
 };
 interface ITeam {
   header: string;
@@ -49,6 +50,69 @@ export const DBTagArr: string[] = ["Mongo", "Firebase"];
 export const EtcTagArr: string[] = ["Figma", "Github"];
 
 export const projectData: TProjectData[] = [
+  {
+    header: "CoinBreif - 실시간 코인 가격 및 정보 조회 플랫폼",
+    date: "2025.01.01 ~ 2024.01.31 (5주)",
+    team: "개인",
+    skill: [
+      "NextJS",
+      "TypeScript",
+      "Zustand",
+      "Tailwind CSS",
+      "Firebase",
+      "ApexCharts",
+      "Shadcn/ui",
+      "Socket.io",
+      "ExpressJS",
+      "Nodemailer",
+    ],
+    imgSrc: [
+      "https://github.com/user-attachments/assets/3381b958-6fe8-45bb-9bb0-b0a92971d0d7",
+      "https://github.com/user-attachments/assets/6eabc2da-2666-431e-9c3f-e48a660043fc",
+      "https://github.com/user-attachments/assets/0b8d07f0-4c59-4955-a5c6-a1c88c95cba9",
+
+      "https://github.com/user-attachments/assets/f9ac726d-1a17-407c-a532-3ad10255aab6",
+      "https://github.com/user-attachments/assets/1d9b956b-a32b-4c09-bc14-711b886fc545",
+      "https://github.com/user-attachments/assets/1bea941e-ea15-4c1e-a43a-e443358e1058",
+    ],
+    introText: [
+      "즐겨찾기한 코인의 실시간 가격 조회",
+      "코인의 현재 가격, 변동률, 최고·최저가, 거래량 조회",
+      "차트와 표로 보는 코인 상세 정보",
+      "환율 계산기 (KRW ↔ USD)",
+    ],
+    modalP: `실시간 코인 시세 조회 및 환율 변환 기능을 제공하는 웹 애플리케이션으로, 웹소켓과 Upbit API를 활용하여 실시간 데이터를 반영하고 ApexChart를 통해 시각적으로 분석할 수 있도록 구현하였습니다.`,
+    modalFirstli: [
+      "웹소켓을 이용한 실시간 코인 가격 조회 (ExpressJS <-> NextJS)",
+      "Upbit API로 코인 리스트 및 상세 정보 조회",
+      "한국수출입은행 API를 활용한 환율 계산 및 변경",
+      "Kakao, Google SNS 로그인 지원",
+      "이메일 OTP 인증을 통한 본인 확인",
+      "ApexChart로 실시간 코인 가격 차트 제공",
+      "Firebase를 활용한 회원가입 및 로그인",
+    ],
+    modalSecondli: [
+      {
+        troble: "세션 쿠키",
+        fix: "",
+      },
+      {
+        troble: "매핑",
+        fix: "",
+      },
+      {
+        troble: "소켓",
+        fix: "",
+      },
+    ],
+    Link: {
+      gitLink: "https://github.com/nile27/CoinBrief",
+      figmaLink:
+        "https://www.figma.com/design/xxO2ItVjjcXe3QsYKTmkPR/coin_project?node-id=0-1&p=f&t=MySe3x2uU8Wj7ybP-0",
+      siteLink: "https://coinbrief.vercel.app/",
+    },
+    modalTag: ["솔로", "실시간 코인 가격", "Upbit_API", "암호 화폐"],
+  },
   {
     header: "Aight Now - AI기반 주식분석플랫폼 ",
     date: "2024.06.24 ~ 2024.08.02 (5주)",
@@ -114,16 +178,17 @@ export const projectData: TProjectData[] = [
     ],
     Link: {
       gitLink: "https://github.com/nile27/Spacspace_AightNow",
-      siteLink: "https://spacspace-aight-now.vercel.app/",
     },
     modalTag: ["팀 프로젝트", "Sniper-Factory", "Sfac-Space", "AI", "주식"],
+    notice:
+      "Tavily AI와 배포 기간이 만료되어 현재 페이지를 운영중이지 않습니다.",
   },
   {
     header: "Mingyu's Portfolio",
     date: "2024.06.01 ~ 2024.06.06 (6일)",
     team: "개인",
     skill: [
-      "NextJS",
+      "React",
       "Figma",
       "TypeScript",
       "Recoil",
@@ -166,10 +231,9 @@ export const projectData: TProjectData[] = [
       },
     ],
     Link: {
-      gitLink: "https://github.com/nile27/Next_Portfolio",
+      gitLink: "https://github.com/nile27/next-to-react-portfolio/",
       figmaLink:
-        "https://www.figma.com/design/qZze2sAfNDqL95ranIaSfr/Untitled?node-id=0-1&t=slBmJx0GDgf6fumO-0",
-      siteLink: "https://mingyu-portfolio.vercel.app/",
+        "https://www.figma.com/design/qZze2sAfNDqL95ranIaSfr/Untitled?node-id=0-1&p=f&t=7oUZtrM0jBOWerVz-0",
     },
     modalTag: ["솔로", "New_Portfolio", "사이드 프로젝트"],
   },
@@ -230,47 +294,7 @@ export const projectData: TProjectData[] = [
     },
     modalTag: ["솔로", "풀스택 프로젝트", "사이드 프로젝트"],
   },
-  {
-    header: "Portfolio_(구 버전)",
-    date: "2023.08 ~ 2023.08 (2주)",
-    team: "개인",
-    skill: [
-      "React",
-      "Figma",
-      "TypeScript",
-      "Recoil",
-      "SCSS",
-      "react-responsive",
-    ],
-    imgSrc: [
-      "https://user-images.githubusercontent.com/114140840/275229229-ffcd075f-c8bd-4525-8c16-bf36a4e6fa1d.gif",
-      "https://user-images.githubusercontent.com/114140840/275229447-d65d0a1f-830c-468c-aa14-e8e5383065fb.gif",
-      "https://user-images.githubusercontent.com/114140840/275229641-1fea8946-26bc-4322-9c9b-90d8e15d489c.gif",
-    ],
-    introText: [
-      "반응형 웹 사이트 입니다.",
-      "Tap, Modal 등의 UI을 구현하였습니다.",
-      "메뉴를 통해 해당 위치로 Scroll이 가능합니다.",
-    ],
-    modalP:
-      "이전 버전의 포트폴리오 사이트이고, 노션, PPT 등 제한적인 양식이 아닌 저만의 양식을 가진 포트폴리오를 가지기 위해 제작하였습니다.",
-    modalFirstli: [
-      "figma를 이용한 화면 설계",
-      "나만의 포트폴리오를 만들어 보기 위해서 제작",
-      "새로운 css 툴을 사용해보기 위해 SCSS를 이용하여 제작",
-      "keyframe을 통해 애니메이션 효과 제작 (Fade-in/out, DropDown 등)",
-      "react-responsive 라이브러리를 통해 Dom Selector들 보다 쉽게 box의 사이즈 조절을 하여 반응형 웹 제작",
-      "글, 이미지 등을 따로 관리하여 유지보수를 쉽게 제작",
-    ],
 
-    Link: {
-      gitLink: "https://github.com/nile27/Portfolio_nile27",
-      figmaLink:
-        "https://www.figma.com/file/g0fMpeE9IiQ8Ww1Vd37qBd/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4(UI)?type=design&node-id=0-1&mode=design&t=oLZkiFIQhixAqGtt-0",
-      siteLink: "https://nile27.github.io/",
-    },
-    modalTag: ["솔로", "Portfolio_Old-version"],
-  },
   {
     header: "잇츠_(맛집 탐색 사이트)",
     date: "2023.05 ~ 2024.05 (4주)",
@@ -301,7 +325,7 @@ export const projectData: TProjectData[] = [
       siteLink: undefined,
     },
     modalP:
-      "Front-end & Back-end 협업 프로젝트이며, 한 달 정도의 시간을 걸쳐 제작하였고, 첫 OpenAPI를 사용하여 만든 프로젝트입니다. 현재는 유지 비용이 많이 들어 배포사이트는 중단된 상태입니다.",
+      "Front-end & Back-end 협업 프로젝트이며, 한 달 정도의 시간을 걸쳐 제작하였고, 첫 OpenAPI를 사용하여 만든 프로젝트입니다. ",
     modalFirstli: [
       "Front-end & Back-end 협업 프로젝트",
       "figma를 이용한 화면 설계",
@@ -318,6 +342,7 @@ export const projectData: TProjectData[] = [
       },
     ],
     modalTag: ["협업 프로젝트", "맛집 탐색 사이트"],
+    notice: "AWS 기간이 만료되어 운영중이지 않습니다.",
   },
 ];
 
