@@ -15,7 +15,7 @@
 - 제작 기간: 2023.06.01 ~ 2023.06.06
 - 리펙토링 기간: 2025.02.20 ~ 2025.02.21
 - 배포링크:   [📎 임민규의 포트폴리오](https://nile27.github.io/)
-- Figma:   [📎 Figma]([https://www.figma.com/file/g0fMpeE9IiQ8Ww1Vd37qBd/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4(UI)?type=design&node-id=0-1&mode=design&t=PjBLYVJr7YN8MlHJ-0](https://www.figma.com/design/qZze2sAfNDqL95ranIaSfr/Untitled?node-id=0-1&p=f&t=3S859S05HT1Oix5L-0))
+- Figma:   [📎 Figma](https://www.figma.com/design/qZze2sAfNDqL95ranIaSfr/Untitled?node-id=0-1&p=f&t=7oUZtrM0jBOWerVz-0)
 
 
 # 🧩 Skill 스택 🧩
