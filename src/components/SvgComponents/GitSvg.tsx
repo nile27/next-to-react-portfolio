@@ -32,16 +32,22 @@ const GitSvg = (props: TMainButton) => {
       } disabled:opacity-50 disabled:pointer-events-none`}
     >
       <svg
-        width="20"
+        width={`${style === "figma" ? "15" : "20"}`}
         height="20"
-        viewBox={`${style === "git" ? "0 0 30 30" : "0 0 20 20"}`}
+        viewBox={`${
+          style === "git"
+            ? "0 0 30 30"
+            : style === "figma"
+            ? "0 0 15 20"
+            : "0 0 20 20"
+        }`}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path d={btnStyle[style]} fill={`currentColor`} />
       </svg>
       <span
-        className={`text-DText textBoxHalf:hidden tablet:hidden text-center flex justify-center items-center h-full ${
+        className={` font-bold text-DText textBoxHalf:hidden tablet:hidden text-center flex justify-center items-center h-full ${
           isDark ? " hover:text-DMainPurple" : " hover:text-LMainPurple"
         } tablet:hidden`}
       >

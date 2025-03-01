@@ -31,7 +31,7 @@ const NavBtn = (props: TMainButton) => {
               : `text-LNav_disable group-hover:text-LText ${
                   isActive && "group-after:scale-100 text-LText "
                 } `
-          } group-after:block w-auto tablet900:text-center  group-after:transition-transform group-after:duration-[500ms] tablet900:text-[18px]  group-hover:after:scale-100 `}
+          } font-bold group-after:block w-auto tablet900:text-center  group-after:transition-transform group-after:duration-[500ms] tablet900:text-[18px]  group-hover:after:scale-100 `}
         >
           {text}
         </span>

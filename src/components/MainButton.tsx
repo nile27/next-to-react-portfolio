@@ -41,7 +41,7 @@ const MainButton = (props: TMainButton) => {
       {...restBtnProps}
       className={cn(
         buttonVariants({ size, color }),
-        `cursor-pointer flex justify-center items-center rounded-lg text-white tracking-wider shadow-xl hover:border-[1px] hover:scale-105 duration-300 hover:ring-1  `
+        ` font-bold cursor-pointer flex justify-center items-center rounded-lg text-white tracking-wider shadow-xl hover:border-[1px] hover:scale-105 duration-300 hover:ring-1  `
       )}
     >
       {children}
