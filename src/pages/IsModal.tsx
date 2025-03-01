@@ -207,12 +207,12 @@ const IsModal = () => {
                                 isDark
                                   ? "text-DText bg-DSecondBg"
                                   : "text-LText bg-LSecondBg"
-                              }  p-2 `}
+                              }  p-2 whitespace-pre-line`}
                             >
                               {item.troble}
                             </li>
                             <li
-                              className={`mobile:text-[14px] ${
+                              className={`mobile:text-[14px] whitespace-pre-line ${
                                 isDark ? "text-DText" : "text-LText"
                               } p-2`}
                             >

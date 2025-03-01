@@ -93,16 +93,15 @@ export const projectData: TProjectData[] = [
     ],
     modalSecondli: [
       {
-        troble: "세션 쿠키",
-        fix: "",
+        troble: `Router Cache로 인해 로그인 후에도 비로그인 상태로 인식되는 문제 발생. 
+         비로그인 상태에서 특정 페이지에 방문한 후 로그인하면, 캐시된 라우트 세그먼트가 유지되어 최신 쿠키 정보를 확인하지 못하는 현상 발ㅇ.`,
+        fix: `로그인 시 페이지를 새로고침하여(Reload) Router Cache를 초기화하도록 변경하고, 
+        이를 통해 로그인 후 최신 쿠키 정보를 정상적으로 확인하고, 로그인 상태가 즉시 반영되도록 개선`,
       },
       {
-        troble: "매핑",
-        fix: "",
-      },
-      {
-        troble: "소켓",
-        fix: "",
+        troble:
+          "Vercel 서버리스 함수(API Route)는 지속적인 연결을 유지할 수 없는 문제로 인해, API Route에서 WebSocket 서버를 운영할 수 없는 문제",
+        fix: "Express.js로 WebSocket 서버를 별도로 구현하고, 독립적으로 배포하여 문제 해결",
       },
     ],
     Link: {
