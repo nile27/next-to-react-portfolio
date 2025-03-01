@@ -67,13 +67,12 @@ export const projectData: TProjectData[] = [
       "Nodemailer",
     ],
     imgSrc: [
-      "https://github.com/user-attachments/assets/3381b958-6fe8-45bb-9bb0-b0a92971d0d7",
-      "https://github.com/user-attachments/assets/6eabc2da-2666-431e-9c3f-e48a660043fc",
-      "https://github.com/user-attachments/assets/0b8d07f0-4c59-4955-a5c6-a1c88c95cba9",
-
-      "https://github.com/user-attachments/assets/f9ac726d-1a17-407c-a532-3ad10255aab6",
-      "https://github.com/user-attachments/assets/1d9b956b-a32b-4c09-bc14-711b886fc545",
-      "https://github.com/user-attachments/assets/1bea941e-ea15-4c1e-a43a-e443358e1058",
+      "https://github.com/user-attachments/assets/b65ffc97-33c2-45af-8d66-d5881e2a39e9",
+      "https://github.com/user-attachments/assets/d84b235b-e93d-4ee0-b4e6-5fc6c132741e",
+      "https://github.com/user-attachments/assets/22d449ff-185e-4f9d-b5f1-d00d0786abc5",
+      "https://github.com/user-attachments/assets/e36ac950-5625-449b-9f0a-9760fd2ce73d",
+      "https://github.com/user-attachments/assets/f615e9f2-e9ec-4b90-b52e-9f41899bd0cc",
+      "https://github.com/user-attachments/assets/bdddb461-5953-4701-b210-10e106926986",
     ],
     introText: [
       "즐겨찾기한 코인의 실시간 가격 조회",
