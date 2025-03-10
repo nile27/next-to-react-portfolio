@@ -51,7 +51,7 @@ export const EtcTagArr: string[] = ["Figma", "Github"];
 
 export const projectData: TProjectData[] = [
   {
-    header: "CoinBreif - 실시간 코인 가격 및 정보 조회 플랫폼",
+    header: "CoinBrief - 실시간 코인 가격 및 정보 조회 플랫폼",
     date: "2025.01.01 ~ 2024.01.31 (5주)",
     team: "개인",
     skill: [
