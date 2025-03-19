@@ -2,6 +2,7 @@ import "./App.css";
 import "./index.css";
 import { RecoilRoot } from "recoil";
 
+import AnimationIntro from "./components/AnimationIntro";
 import Introduce from "./pages/Introduce";
 import ThemeToggleButton from "./components/ThemeToggleButton";
 import Container from "./pages/Container";
@@ -15,8 +16,8 @@ function App() {
   return (
     <RecoilRoot>
       <div className="App">
+        <AnimationIntro />
         <Introduce />
-
         <ThemeToggleButton />
         <IsModal />
         <Container>
