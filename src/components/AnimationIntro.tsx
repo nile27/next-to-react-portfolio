@@ -14,7 +14,7 @@ export default function IntroAnimation() {
       setIsTime(true);
       console.log("unset");
       document.body.style.overflow = "unset";
-    }, 1500);
+    }, 3000);
   }, [isTime]);
 
   return (

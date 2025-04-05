@@ -8,10 +8,6 @@ const rootElement = document.getElementById("root") as HTMLElement;
 if (!rootElement) throw new Error("root element not found");
 const root = ReactDOM.createRoot(rootElement);
 
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(<App />);
 
 reportWebVitals();
