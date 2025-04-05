@@ -8,9 +8,11 @@ export default function IntroAnimation() {
   const [isTime, setIsTime] = useRecoilState<boolean>(isTimeAtom);
   const isDark = useRecoilValue<boolean>(isDarkAtom);
   useEffect(() => {
+    console.log("hidden");
     document.body.style.overflow = "hidden";
     setTimeout(() => {
       setIsTime(true);
+      console.log("unset");
       document.body.style.overflow = "unset";
     }, 3000);
   }, [isTime]);
