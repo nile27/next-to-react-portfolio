@@ -160,11 +160,7 @@ export const projectData: TProjectData[] = [
         troble: "Firebase-Admin 서비스 키 인증 문제",
         fix: "Firebase-Admin 키인 json 파일을 base64로 인코딩 한 후 직접 env에 추가하여 디코딩 후 사용",
       },
-      {
-        troble:
-          "Next-Auth 세션으로 인한 자동 로그인 문제 - (자동 로그인을 체크하지 않아도 자동 로그인 기능 활성화)",
-        fix: "Next-Auth의 세션 유효기간을 짧게 설정하고, Firebase의 로그인 유지 기능으로 변경하여 문제 해결",
-      },
+     
       {
         troble: "뉴스 기사 크롤링 태그 형식 저장으로 인한 문자열 번역 문제",
         fix: "jsdom 라이브러리를 이용하여 태그들의 텍스트 값만 추출하여 번역하고, 번역된 문자로 대처하여 다시 보내는 백엔드 기능으로 문제 해결",
