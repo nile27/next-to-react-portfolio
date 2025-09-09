@@ -13,6 +13,7 @@ type TProjectData = {
     gitLink: string;
     figmaLink?: string;
     siteLink?: string;
+    notionLink?: string;
   };
   modalTag: string[];
   notice?: string;
@@ -50,6 +51,59 @@ export const DBTagArr: string[] = ["Mongo", "Firebase"];
 export const EtcTagArr: string[] = ["Figma", "Github"];
 
 export const projectData: TProjectData[] = [
+  {
+    header: "Slid to-do - 학습·작업 관리를 위한 할 일 + 노트 플랫폼",
+    date: "2025.07.03 ~ 2024.08.12 (6주)",
+    team: "팀 (FE: 5명)",
+    testID: { id: "codeit7@test.com", pw: "codeit10-7" },
+    skill: [
+      "NextJS",
+      "TypeScript",
+      "Zustand",
+      "Tailwind CSS",
+      "React-Query",
+      "Framer Motion",
+    ],
+    imgSrc: [
+      "https://github.com/user-attachments/assets/59fc7900-9b20-4fab-8348-3d3f1f646d87",
+      "https://github.com/user-attachments/assets/1fa1e895-8296-4c31-adc9-49360157a242",
+      "https://github.com/user-attachments/assets/d61697c2-7145-4bf2-bdf0-257648e087c8",
+      "https://github.com/user-attachments/assets/43ebf0d0-6c54-40c6-a8a6-ecf475bc44eb",
+      "https://github.com/user-attachments/assets/979801f7-89c0-420c-b4d8-3c0abe98d12c",
+    ],
+    introText: [
+      "할 일, 목표, 노트 기능을 통합한 페이지 구조로 콘텐츠를 관리",
+      "할 일 등록/수정/삭제 및 완료 여부를 기반으로 진행 상태를 시각화하고, 필터링을 통해 작업 효율성 향상",
+      "파일, 링크 등 다양한 콘텐츠 유형을 등록할 수 있어 유연한 정보 관리 지원",
+      "각 할 일에 연결된 노트 기능으로 학습 내용 및 작업 히스토리를 구조화",
+    ],
+    modalP: `Slid to-do는 학습 및 작업을 할 일 목록으로 정리하고, 각 콘텐츠에 대한 노트를 작성하며 체계적으로 관리 할 수 있는 서비스입니다.`,
+    modalFirstli: [
+      "스타일 관리 효율성을 높이기 위해 공통 스타일 컴포넌트 제작 ( Button, Input, Text 등 )",
+      "코드 중복을 줄이고, UI/UX 개선을 위해 리펙토링 진행 - ( 타이머, API route 등)",
+      "Next.js API Route에서 HttpOnly 쿠키를 활용해 인증 토큰의 유실 및 조작을 방지하는 역할 수행",
+      "Next.js Middleware로 로그인 여부를 판별하여, 인증된 유저만 서비스 이용이 가능하도록 구현",
+      "Dashboard Page, Sidebar 등 기능 구현",
+    ],
+    modalSecondli: [
+      {
+        troble: `Next.js의 SSR과 CSR 하이드레이션 과정에서 초기 애니메이션 상태가 불일치하여, 새로고침 시 사이드바 애니메이션이 열렸다 닫히는 오작동 발생`,
+        fix: `에니메이션 상태에 초기값을 추가하여, SSR/CSR 간 초기 렌더링 차이로 인한 애니메이션 오작동을 방지함`,
+      },
+      {
+        troble:
+          "수정이 불가능한 기존 백엔드 서버 환경으로 인해, 토큰을 HttpOnly 쿠키에 저장하여 보안을 강화하는 데 제약이 있었음",
+        fix: "Next.js API Route를 중간 계층으로 활용하여, 로그인 시 수신한 토큰을 HttpOnly 쿠키에 저장해 보안 인증 처리 구현",
+      },
+    ],
+    Link: {
+      gitLink: "https://github.com/nile27/Slid-to-do-Refactoring",
+      notionLink:
+        "https://mewing-halloumi-584.notion.site/Team-7-Project-Workspace-22261be3ce85802badebf9804fd30fdd",
+      siteLink: "https://slid-to-do-refactoring.vercel.app/",
+    },
+    modalTag: ["팀 프로젝트", "반응형 UI", "할 일&콘텐츠 관리"],
+  },
   {
     header: "CoinBrief - 실시간 코인 가격 및 정보 조회 플랫폼",
     date: "2025.01.01 ~ 2024.01.31 (5주)",
@@ -346,7 +400,24 @@ export const projectData: TProjectData[] = [
 
 export const experienceData: TexperienceData[] = [
   {
-    header: "스나이퍼팩토리 _ 프로젝트 캠프:Next.js 1기",
+    header: "코드잇 스프린트 - 심화 프론트엔드 엔지니어 부트캠프",
+    header2: "수료",
+    date: "2024.06 ~ 2024.08",
+    Learn: [
+      "Next.js 기반 jest, Tailwind CSS 등 프론트엔드 현업에 필요한 심화 기술 강의 수강 ",
+      "팀 협업 프로젝트",
+    ],
+
+    team: [
+      {
+        header: "Slid to-do - (학습·작업 관리를 위한 할 일 + 노트 플랫폼)",
+        semiHeader: "코드잇 프론트 심화과정 - Team Project",
+        list: ["담당: Dashboard, Sidebar, 공통 스타일, API Route"],
+      },
+    ],
+  },
+  {
+    header: "스나이퍼팩토리 - 프로젝트 캠프:Next.js 1기",
     header2: "수료",
     date: "2024.06 ~ 2024.08",
     Learn: [
@@ -358,7 +429,7 @@ export const experienceData: TexperienceData[] = [
 
     team: [
       {
-        header: "AightNow _ (AI기반 주식분석플랫폼)",
+        header: "AightNow - (AI기반 주식분석플랫폼)",
         semiHeader: "프로젝트 캠프:Next.js - Team Project",
         list: [
           "담당: 로그인/회원 가입, 소셜 로그인, 뉴스 기사 번역",
@@ -368,7 +439,7 @@ export const experienceData: TexperienceData[] = [
     ],
   },
   {
-    header: "코드스테이츠 _ FrontEnd 과정",
+    header: "코드스테이츠 - FrontEnd 과정",
     header2: "수료",
     date: "2022.12 ~ 2023.06",
     Learn: [
@@ -380,7 +451,7 @@ export const experienceData: TexperienceData[] = [
 
     team: [
       {
-        header: "잇츠 _ (맛집 탐색 사이트)",
+        header: "잇츠 - (맛집 탐색 사이트)",
         semiHeader: "코드스테이츠 Final Team Project",
         list: [
           "담당: 로그인/회원 가입, 공통 컴포넌트 제작, 맛집 탐색 지도 (Kakao Map)",

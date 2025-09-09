@@ -269,6 +269,16 @@ const IsModal = () => {
                   <GitSvg style={"link"}>배포 사이트</GitSvg>
                 </a>
               )}
+            {projectData[idx].Link.notionLink &&
+              projectData[idx].header !== "Mingyu's Portfolio" && (
+                <a
+                  href={projectData[idx].Link.notionLink}
+                  target="_blank"
+                  className="w-auto h-auto tablet:w-auto"
+                >
+                  <GitSvg style={"notion"}>배포 사이트</GitSvg>
+                </a>
+              )}
           </aside>
         </>
       )}
