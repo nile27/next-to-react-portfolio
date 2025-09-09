@@ -146,7 +146,7 @@ export const projectData: TProjectData[] = [
     ],
     modalSecondli: [
       {
-        troble: `Router Cache로 인해 로그인 후에도 비로그인 상태로 인식되는 문제 발생. 
+        troble: `페이지 Cache로 인해 로그인 후에도 비로그인 상태로 인식되는 문제 발생. 
          비로그인 상태에서 특정 페이지에 방문한 후 로그인하면, 캐시된 라우트 세그먼트가 유지되어 최신 쿠키 정보를 확인하지 못하는 현상 발생.`,
         fix: `로그인 시 페이지를 새로고침하여(Reload) Router Cache를 초기화하도록 변경하고, 
         이를 통해 로그인 후 최신 쿠키 정보를 정상적으로 확인하고, 로그인 상태가 즉시 반영되도록 개선`,
@@ -214,11 +214,7 @@ export const projectData: TProjectData[] = [
         troble: "Firebase-Admin 서비스 키 인증 문제",
         fix: "Firebase-Admin 키인 json 파일을 base64로 인코딩 한 후 직접 env에 추가하여 디코딩 후 사용",
       },
-      {
-        troble:
-          "Next-Auth 세션으로 인한 자동 로그인 문제 - (자동 로그인을 체크하지 않아도 자동 로그인 기능 활성화)",
-        fix: "Next-Auth의 세션 유효기간을 짧게 설정하고, Firebase의 로그인 유지 기능으로 변경하여 문제 해결",
-      },
+     
       {
         troble: "뉴스 기사 크롤링 태그 형식 저장으로 인한 문자열 번역 문제",
         fix: "jsdom 라이브러리를 이용하여 태그들의 텍스트 값만 추출하여 번역하고, 번역된 문자로 대처하여 다시 보내는 백엔드 기능으로 문제 해결",
